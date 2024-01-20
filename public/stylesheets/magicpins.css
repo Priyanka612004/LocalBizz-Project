@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* .details{
+    float: right;
+    height: 400px;
+    width: 100%;
+    padding-left: 30px;
+    background-image:url("AllImages/bakery/bakery\ baground.jpg");
+    background-size: cover;
+} */
+.contact{
+    margin: 10px;
+    
+}
+.contact a{
+    float: right;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.details .id h2{margin-top: 20px;
+    margin-bottom:0 ;
+    font-size: 25px;
+    font-weight: 700;
+}
+.details .name h3{
+    margin-top: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details .closed{font-weight: 700;
+    font-size: 25px;
+}
+.details .stars{
+    font-weight: 500;
+   font-size: 50px;
+}
+
+#Services{
+padding-top: 40px;
+text-align: center;
+align-content: center;
+}
+#Services #grad{
+margin-top: 0;
+font: 70px;
+font-weight: 800;
+}
+.flex-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.flex-container .flex-item img{
+margin: 30px;
+height: 200px;
+width: 200px;
+object-fit: cover;
+}
+.flex-item:hover{
+transform: translateY(-5px);
+box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+height: 200px;
+width: 100%;
+}
+#foot{
+padding-left: 100px;
+padding-right: 100px;
+}
+#foot h3{
+padding: 0;
+margin: 0;
+font-size: 24px;
+}
+                   /* for first coloumn */
+.foot1{
+padding: 0;
+margin: 0;
+}
+.first h4{padding: 0;
+margin: 0;
+font-size: 14px;
+}
+.first{
+padding: 0;
+margin: 0;
+margin-top: 10px;
+}
+.first a{padding: 0;
+margin: 0;
+color: #000;
+text-decoration: none;
+}
+                   /* for second coloumn */
+.foot2{
+padding: 0;
+margin: 0;
+}
+.second h5{padding: 0;
+margin: 0;
+font-size: 14px;
+}
+.second{
+padding: 0;
+margin: 0;
+margin-top: 10px;
+}
+.second a{
+color: #000;
+text-decoration: none;
+}
+                   /* for third coloumn */
+.foot3{
+padding: 0;
+margin: 0;
+}
+.third h6{padding: 0;
+margin: 0;
+font-size: 14px;
+}
+.third{
+padding: 0;
+margin: 0;
+margin-top: 10px;
+}
+.third a{
+color: #000;
+text-decoration: none;
+}
+a:hover{
+text-decoration:underline;
+}
+@media screen and (max-width:700px) {
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 200px;
+        width: 100%;
+    }
+    #foot{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #foot h3{
+        font-size: 20px;
+    }
+                               /* for first coloumn */
+    .foot1{
+        padding: 0px;
+    }
+    .first h4{
+        font-size: 14px;
+    }
+    .first{
+        margin-top: 10px;
+    }
+    .first a{
+        color: #000;
+        text-decoration: none;
+    }
+                               /* for second coloumn */
+    .foot2{
+        padding: 0px;
+    }
+    .second h5{
+        font-size: 14px;
+    }
+    .second{
+        margin-top: 10px;
+    }
+    .second a{
+        color: #000;
+        text-decoration: none;
+    }
+                               /* for third coloumn */
+    .foot3{
+        padding: 0px;
+    }
+    .third h6{
+        font-size: 14px;
+    }
+    .third{
+        margin-top: 10px;
+    }
+    .third a{
+        color: #000;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+
+}

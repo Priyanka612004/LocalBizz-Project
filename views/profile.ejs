@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="stylesheet" href="/stylesheets/Profile.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <a href="/FrontPage">
+                <i class='bx bx-arrow-back'></i>
+            </a>
+            <h1>PROFILE</h1>
+            <a href="/">
+                <i class='bx bx-home-alt-2'></i>
+            </a>
+        </div>
+
+        <div class="profile">
+            <div class="card">
+                <img name="image" src="/images/uploads/<%=user.profileImage%>" id="profile-pic">
+                <!-- <label for="input-file">Update Image</label> -->
+                <!-- <input type="file" id="input-file" accept="image/jpeg, image/png, image/jpg"> -->
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h1 id="username"><%=user.username%></h1>
+            <h3 id="name"><%=user.name%></h3>
+            <p id="email"><%=user.email%></p>
+            <p id="email"><%=user.bio%></p>
+
+            <!-- Edit button -->
+            <a href="/edit"><button id="edit" class="edit-button">Edit Now</button></a>
+        </div>
+         <!-- <div class="posts w-full flex gap-1 py-2 mt-5 flex-wrap">
+        <%user.posts.forEach(function(post){%>
+          <div class="post w-[32.5%] h-32 bg-sky-100 overflow-hidden">
+            <img class="w=full h-full object-cover" src="/images/uploads/<%=post.picture%>" alt="">
+          </div>
+       <% })%>
+      </div>
+  -->
+</div>
+  <!-- <div class="flex-item" id="flex-item1">
+    <%user.posts.forEach(function(post){%>
+    <div class="profile-image"><a href="/FrontPage"><img id="pimage" src="/images/uploads/<%=user.profileImage%>" alt=""><div class="phead"><h4><%=user.username%></h4></a><h6>Wrote a review</h6></div></div>
+    <a href="/FrontPage"><img src="/images/uploads/<%=user.profileImage%>" alt=""></a><div class="con"><h4><%=user.name%></h4>
+        <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></div>
+        <p><%=user.bio%></p><hr>
+        <div class="emoji"><a href=""><i class='bx bx-bulb' ></i></a><a href=""><i class='bx bx-happy-beaming'></i></a><a href=""><i class='bx bx-happy-heart-eyes'></i></a></div>
+    </div>
+    <% })%>
+</div> -->
+
+
+</body>
+</html>
+

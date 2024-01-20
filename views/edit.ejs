@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/stylesheets/Profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <!-- <div class="flex justify-between items-center px-4">
+      <a class="text-sm text-blue-500" href="/profile"><i class="ri-arrow-left-s-line"></i> profile</a>-->
+      <div class="profile-header"><h1>Edit Profile</h1></div>
+      <!-- <a class="text-sm" href="/feed"><i class="ri-home-line"></i> home</a>
+    </div> -->
+    <div class="profile-editimage">
+    <div class="profile-info">
+      <div class="card">
+        <img src="/images/uploads/<%=user.profileImage%>" id="profile-pic">
+      </div>
+      <button class="edit-button" id="editbtn">edit picture</button>
+    </div>
+</div>
+    <div class="profile-info">
+      <!-- <h3 class="text-lg leading-none">Edit Account Details</h3> -->
+      <form class="profile-edit" action="/update" method="post" enctype="multipart/form-data">
+        <input  id="imageinput" hidden type="file" name="image">
+        <input type="text" placeholder="username" name="username" value="<%=user.username%>">
+        <input type="text" placeholder="name" name="name" value="<%=user.name%>">
+        <!-- <input type="text" placeholder="name" name="name" value="<%=user.name%>"> -->
+        <input placeholder="bio"name="bio"value="<%=user.bio%>">
+        <button id="edit" class="edit-button"><input hidden type="submit" value="Update Now">Update Now</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.querySelector("#editbtn")
+    .addEventListener("click",function(){
+      document.querySelector("#imageinput").click();
+    })
+    // document.querySelector("#imageinput")
+    // .addEventListener("change",function(){
+
+    // })
+  </script>
+</body>
+</html>
+

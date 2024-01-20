@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="/stylesheets/All_Services.css">
+    <title>Tutoring Serivices</title>
+</head>
+<body>
+    <div class="categories">
+        <div class="forUpload">
+            <a href="/uploadTutoring">
+                <i class='bx bx-upload'> Upload Here</i>
+            </a>
+        <h2>Tutoring Services</h2>
+        </div>
+        <%posts.reverse().forEach(function(elem){%>
+            <div class="photoinfo">
+                <div class="info">
+                    <a href=""><img src="images/uploads/<%=elem.picture%>" alt=""></a>
+                    <div class="inform">
+                        <div class="contact">
+                            <a href="tel:<%=elem.phone%>"><i class='bx bxl-whatsapp' style='color:#2eee24' ></i></a>
+                            <a href="tel:<%=elem.phone%>"><i class='bx bx-phone-call' style='color:#0c0c0d'  ></i></a>
+                            <a href="mailTo:<%=elem.email%>"><i class='bx bxs-envelope-open' style='color:#3290f2' ></i></a>
+                            <a href="mailTo:<%=elem.email%>"><i class='bx bxl-twitter' style='color:#2962ff'></i></a>
+                        </div>
+                        <div class="name"><a href=""><h3><%=elem.username%></h3></a></div>
+                        <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></div>
+                        <div class="closed"><i>Opens</i>Until:<%=elem.opensUntil%> PM</div>
+                        
+                        <div class="content"><h3><%=elem.name%></h3><br><p><%=elem.caption%></p></div>
+                        <div class="direction"> <a href="<%=elem.location%>"><button>Track Location</button></a></div>
+    
+                    </div>
+                </div>
+            </div>
+        <%})%>
+    
+    </div>
+    <footer>
+        <Div id="foot" class="foot1">
+            <h3>About Us</h3>
+            <div class="first">
+                <h4>Carrers</h4>
+                <h4>Privacy Policy</h4>
+                <h4>Terms and Service</h4>
+                <h4>Investor Relations</h4>
+            </div>
+        </Div>
+        <Div id="foot" class="foot2">
+            <h3>Quick Links</h3>
+            <div class="second">
+                <h5><a href="/">Home</a></h5>
+                <h5><a href="/FrontPage">Front</a></h5>
+                <h5><a href="/Tutoring_Services">Users</a></h5>
+                <!-- <h5><a href="#">Profiles</a></h5> -->
+            </div>
+        </Div>
+        <Div id="foot" class="foot3">
+            <h3>Contact Us</h3>
+            <div class="third">
+                <h5><i class='bx bxs-envelope-open' style='color:#3290f2' ></i>
+                    <a href="mailTo:"> Email</a></h5>
+                <h5><i class='bx bx-phone-call' style='color:#0c0c0d'  ></i>
+                    <a href="tel:"> Phone</a></h5>
+                <h5><i class='bx bxl-whatsapp-square' style='color:#1ae363'></i>
+                    <a href=""> Whatsapp</a></h5>
+                <h5><i class='bx bxl-twitter' style='color:#2962ff'  ></i>
+                    <a href=""> Twitter</a></h5>
+            </div>
+        </Div>
+    </footer>
+</body>
+</html>
